@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>
-        Rachit's Portfolio
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="Stylesheets/global.css"> -->
-    <!-- <link rel="stylesheet" href="Stylesheets/utility.css"> -->
-    <!-- <link rel="stylesheet" href="Stylesheets/side_specific.css"> -->
-    <link rel="stylesheet" href="Stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working in Progress</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .triangle-image {
+            width: 15vw;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .loading-circle {
+            margin: 20px auto;
+            width: 40px;
+            height: 40px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #ff0000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .text {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="left">Rachit's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="gold_color">Rachit</span>
-                <div>
-                    and I am a
-                </div>
-                <span id="element" class="gold_color"></span>
-            </div>
-            <div class="rightSection">
-                <img src="Images/Developer.png" alt="Developer">
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <h1>Projects</h1>
-        </section>
-    </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="JavaScripts/Typing Animate.js"></script>
+    <div class="container">
+        <!-- Replace 'yellow-triangle.png' with the path to your yellow triangle image -->
+        <img src="/Images/work in progress.png" alt="Work In Progress" class="triangle-image">
+        <div class="loading-circle"></div>
+        <div class="text">Working in Progress...</div>
+    </div>
 </body>
-
 </html>
