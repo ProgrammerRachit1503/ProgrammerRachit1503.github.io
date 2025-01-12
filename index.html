@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="Stylesheets/global.css"> -->
+    <!-- <link rel="stylesheet" href="Stylesheets/utility.css"> -->
+    <!-- <link rel="stylesheet" href="Stylesheets/side_specific.css"> -->
+    <link rel="stylesheet" href="Stylesheets/style.css">
 </head>
 
 <body>
@@ -30,30 +33,23 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is Rachit
+                Hi, My name is <span class="cyan_color">Rachit</span>
                 <div>
                     and I am a
                 </div>
-                <span id="element"></span>
+                <span id="element" class="cyan_color"></span>
             </div>
             <div class="rightSection">
                 <img src="Images/Developer.png" alt="Developer">
             </div>
         </section>
+        <hr>
         <section class="secondSection">
-
+            <h1>Projects</h1>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['A Passionate Coder &amp; Learner', 'Python Developer', 'Lazy Developer'],
-            typeSpeed: 50,
-            backDelay: 500,
-            backSpeed: 20,
-            loop: true
-        });
-    </script>
+    <script src="JavaScripts/Typing Animate.js"></script>
 </body>
 
 </html>
